@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
 
 :root{
     --cor-primaria: #000000;
@@ -39,7 +41,7 @@ h2{
 
 .cabecalho__menu__link{
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -50,15 +52,24 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 .apresentacao__conteudo{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
+
+.apresentacao__conteudo__experiencia{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 .apresentacao__conteudo__titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-primaria);
 }
 
@@ -66,7 +77,7 @@ h2{
     color: var(--cor-terciaria);
 }
 .apresentacao__conteudo__texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
 
@@ -84,13 +95,13 @@ h2{
     font-size: 24px;
 }
 
-.apresentacao__links_link{
+.apresentacao__links_navegacao{
     /* background-color: var(--cor-terciaria); */
-    width: 378px;
+    width: 50%;
     text-align: center;
     border: 2px solid var(--cor-terciaria);
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 21.5px 0px ;
     text-decoration: none;
     color: var(--cor-secundaria);
@@ -102,15 +113,14 @@ h2{
     align-items: center;
     transition: 0.3s;
 }
-.apresentacao__links_link:hover{
+.apresentacao__links_navegacao:hover{
     background-color: var(--cor-btn-hover);
     padding: 24.5px 22px ;
 }
-.imagem-apresentacao{
+.apresentacao__imagem{
     max-width:488px;
-    max-height:550px;
-    width: auto;
-    height: auto;
+    max-height:750px;
+    width: 50%;
 }
 .rodape{
     color: var(--cor-primaria);
@@ -118,6 +128,112 @@ h2{
     padding: 24px;
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+
+
+/**/
+
+.experiencia__timeline{
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.experiencia__timeline ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+    list-style-type: none;
+}
+
+.experiencia__timeline ul li .experiencia__timeline__conteudo {
+    width: 50%;
+    padding: 0 20px;
+}
+
+
+.experiencia__timeline ul li .experiencia__timeline__data {
+    width: 50%;
+    padding: 0 20px;
+    font-weight: normal;
+}
+
+/* .experiencia__timeline ul li:nth-child(even) {
+    flex-direction: row-reverse;
+} */
+
+/* .experiencia__timeline ul li .experiencia__timeline__data h4 {
+    float: right
+} */
+
+.experiencia__timeline ul li .experiencia__timeline__conteudo h4{
+    float: right
+}
+
+.experiencia__timeline ul li .experiencia__timeline__conteudo h3 {
+    padding: 10px 20px;
+    background-color: #be9fe1;
+    margin-bottom: 0;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.experiencia__timeline ul li .experiencia__timeline__conteudo p {
+    padding: 10px 20px;
+    background-color: #e1d9ec;
+    margin-top: 0;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.experiencia__timeline ul li .experiencia__timeline__data h4 {
+    background-color: #e1ccec;
+    width: 100px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+}
+
+.point {
+    min-width: 20px;
+    min-height: 20px;
+    background-color: var(--cor-primaria);
+    border-radius: 100%;
+    border: 3px var(--cor-terciaria) solid;
+    position: relative;
+}
+
+
+.experiencia__timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    left: 50%;
+    background-color: var(--cor-terciaria);
+}
+
+@media (max-width: 1200px){
+    
+    .cabecalho{
+        padding: 10% 0 0 0 ;
+    }
+    
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto; /* ocupa todo o espaço */ 
+    }
 }
