@@ -24,13 +24,7 @@ body{
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
 }
-h1{
-    color: var(--cor-secundaria);
-}
-h2{
-    color: var(--cor-secundaria);
 
-}
 .cabecalho{
     padding: 2% 0 0 15% ;
 }
@@ -56,13 +50,6 @@ h2{
 }
 .apresentacao__conteudo{
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.apresentacao__conteudo__experiencia{
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -132,97 +119,10 @@ h2{
     font-weight: 400;
 }
 
-
-/**/
-
-.experiencia__timeline{
-    position: relative;
-    margin: 0 auto;
-    width: 90%;
-}
-
-.experiencia__timeline ul li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 50px;
-    list-style-type: none;
-}
-
-.experiencia__timeline ul li .experiencia__timeline__conteudo {
-    width: 50%;
-    padding: 0 20px;
-}
-
-
-.experiencia__timeline ul li .experiencia__timeline__data {
-    width: 50%;
-    padding: 0 20px;
-    font-weight: normal;
-}
-
-/* .experiencia__timeline ul li:nth-child(even) {
-    flex-direction: row-reverse;
-} */
-
-/* .experiencia__timeline ul li .experiencia__timeline__data h4 {
-    float: right
-} */
-
-.experiencia__timeline ul li .experiencia__timeline__conteudo h4{
-    float: right
-}
-
-.experiencia__timeline ul li .experiencia__timeline__conteudo h3 {
-    padding: 10px 20px;
-    background-color: #be9fe1;
-    margin-bottom: 0;
-    text-align: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.experiencia__timeline ul li .experiencia__timeline__conteudo p {
-    padding: 10px 20px;
-    background-color: #e1d9ec;
-    margin-top: 0;
-    text-align: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.experiencia__timeline ul li .experiencia__timeline__data h4 {
-    background-color: #e1ccec;
-    width: 100px;
-    text-align: center;
-    padding: 5px 10px;
-    border-radius: 10px;
-
-}
-
-.point {
-    min-width: 20px;
-    min-height: 20px;
-    background-color: var(--cor-primaria);
-    border-radius: 100%;
-    border: 3px var(--cor-terciaria) solid;
-    position: relative;
-}
-
-
-.experiencia__timeline::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 3px;
-    left: 50%;
-    background-color: var(--cor-terciaria);
-}
-
 @media (max-width: 1200px){
     
     .cabecalho{
-        padding: 10% 0 0 0 ;
+        padding: 10%;
     }
     
     .cabecalho__menu{
